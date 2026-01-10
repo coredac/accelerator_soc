@@ -79,7 +79,7 @@ module axis_dma_duplex #(
   // ---------------------------------------------------------------------------
   typedef enum logic [1:0] {RX_IDLE, RX_AR, RX_R, RX_DONE} rx_state_e;
   rx_state_e rx_st; logic [31:0] rx_pkts_left; logic [AXI_ADDR_W-1:0] rx_addr;
-  logic [1:0] rx_beat_cnt; logic [AXIS_W-1:0] rx_shift;
+  logic [2:0] rx_beat_cnt; logic [AXIS_W-1:0] rx_shift;
 
   assign busy_rx = (rx_st != RX_IDLE) && (rx_st != RX_DONE);
   //assign done_rx = (rx_st == RX_DONE);

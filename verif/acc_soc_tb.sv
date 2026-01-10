@@ -1,12 +1,12 @@
 `timescale 1ps/1ps
 /*
-vcs -sverilog -full64 -timescale=1ns/1ps erv_RISC-V/ALUCtrl.v erv_RISC-V/dff.v erv_RISC-V/immGen.v erv_RISC-V/mainCtrl.v erv_RISC-V/risc5ALU_core.v erv_RISC-V/riscV.v \
-                                         common_cells/src/stream_mux.sv common_cells/src/stream_fork.sv common_cells/src/stream_fifo.sv \
-                                         common_cells/src/stream_join.sv common_cells/src/stream_fork_dynamic.sv common_cells/src/fifo_v3.sv common_cells/src/stream_join_dynamic.sv \
-                                         axi/src/axi_pkg.sv axi/src/axi_intf.sv axi/src/axi_to_detailed_mem.sv axi/src/axi_to_mem.sv \
-                                         ./MeshMultiCgraRTL__explicit__pickled.v \
-                                         src/imem_rom.sv src/dp_sram_axi_cpu.sv src/cgra_axis_bridge.sv src/axis_dma_duplex.sv src/acc_soc.sv verif/acc_soc_tb.sv \
-                                         -debug_access+all +incdir+common_cells/include +incdir+axi/include +incdir+erv_RISC-V -top acc_soc_tb
+vcs -sverilog -full64 -timescale=1ns/1ps ../erv_RISC-V/ALUCtrl.v ../erv_RISC-V/dff.v ../erv_RISC-V/immGen.v ../erv_RISC-V/mainCtrl.v ../erv_RISC-V/risc5ALU_core.v ../erv_RISC-V/riscV.v \
+                                         ../common_cells/src/stream_mux.sv ../common_cells/src/stream_fork.sv ../common_cells/src/stream_fifo.sv \
+                                         ../common_cells/src/stream_join.sv ../common_cells/src/stream_fork_dynamic.sv ../common_cells/src/fifo_v3.sv ../common_cells/src/stream_join_dynamic.sv \
+                                         ../axi/src/axi_pkg.sv ../axi/src/axi_intf.sv ../axi/src/axi_to_detailed_mem.sv ../axi/src/axi_to_mem.sv \
+                                         ../MeshMultiCgraRTL__explicit__pickled.v \
+                                         ../src/imem_rom.sv ../src/dp_sram_axi_cpu.sv ../src/cgra_axis_bridge.sv ../src/axis_dma_duplex.sv ../src/acc_soc.sv ../verif/acc_soc_tb.sv \
+                                         -debug_access+all +incdir+../common_cells/include +incdir+../axi/include +incdir+../erv_RISC-V -top acc_soc_tb
 */
 
 module acc_soc_tb
